@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rwo-0I-FgL">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instrument2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-GT-xmA">
+                                <rect key="frame" x="110" y="133.5" width="447" height="241.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ISE-GT-xmA" secondAttribute="height" multiplier="402:217" id="beK-wX-aKr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Tt-Bg-fl1">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Tt-Bg-fl1" secondAttribute="trailing" id="62b-h8-pbg"/>
+                            <constraint firstItem="7Tt-Bg-fl1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HrP-o4-Dns"/>
+                            <constraint firstItem="Rwo-0I-FgL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="L46-Gu-GSi"/>
+                            <constraint firstAttribute="trailing" secondItem="Rwo-0I-FgL" secondAttribute="trailing" id="Lrn-3C-HQx"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ISE-GT-xmA" secondAttribute="bottom" id="NII-2C-cmO"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="7Tt-Bg-fl1" secondAttribute="bottom" id="gHf-mb-ggU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ISE-GT-xmA" secondAttribute="trailing" constant="90" id="j48-4l-mCs"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Rwo-0I-FgL" secondAttribute="bottom" id="jCl-8m-lBi"/>
+                            <constraint firstItem="ISE-GT-xmA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="90" id="mmX-y4-pxT"/>
+                            <constraint firstItem="7Tt-Bg-fl1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="v8Y-Su-0cM"/>
+                            <constraint firstItem="Rwo-0I-FgL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xHy-Ri-kvm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.724137931034484" y="372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen.png" width="860" height="489"/>
+        <image name="Stage.jpeg" width="275" height="183"/>
+        <image name="instrument2.png" width="889" height="442"/>
+    </resources>
+</document>
